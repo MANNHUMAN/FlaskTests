@@ -1,0 +1,11 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+	background-image: url("assets/nero.jpg");
+	background-color: blue;
+	background-repeat: no-repeat;
+	background-position:top;
+	background-size:cover;
+	height:1000px;
+	positoon:relative;
+}
