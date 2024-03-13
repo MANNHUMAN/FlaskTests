@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>swag</h1>
+</head>
+
+<body>
+{% with messages=get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    {% for item in values %}
+        <p>ENTRY: {{item._id}}, {{item.log}} Message: {{item.message}}</p>
+    {% endfor %}
+    <form action="#" method="post">
+        <p>Message: </p>
+        <p><input type="text" name="message"/></p>
+        <p><input type="submit" value="SEND"></p>
+    </form>
+</body>
+
+</html>
