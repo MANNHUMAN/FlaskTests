@@ -1,6 +1,7 @@
 from flask import Flask,render_template,url_for,request,redirect,session,flash
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
+import threading
 
 app=Flask(__name__)
 app.secret_key="proj"
@@ -54,4 +55,6 @@ if __name__=='__main__':
     with app.app_context():
         db.drop_all()
         db.create_all()
-    app.run(debug=True)
+        def flaskrun():
+            app.run(debug=True)
+        
