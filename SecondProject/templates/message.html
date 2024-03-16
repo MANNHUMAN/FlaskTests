@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block head %}{% endblock %}
+{% block body %}
+<form action="#" method="post">
+    <p>MESSAGE: </p>
+    <p><input type="text" name="message"/></p>
+    <p><input type="submit" value="SUBMIT"/></p>
+</form>
+{% for item in values %}
+    <p>{{item.log}}: {{item.message}}
+    <form action="#" method="post">
+        <input type="hidden" name="delete" value={{item._id}}>
+        <input type="submit" value="DELETE?">/</p>
+    </form>
+{% endfor %}
+{% endblock %}

@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <h1>swag</h1>
-</head>
-
-<body>
-{% with messages=get_flashed_messages() %}
-    {% if messages %}
-        {% for msg in messages %}
-            <p>{{msg}}</p>
-        {% endfor %}
-    {% endif %}
-{% endwith %}
-    {% for item in values %}
-        <p>ENTRY: {{item._id}}, {{item.log}} Message: {{item.message}}</p>
-    {% endfor %}
-    <form action="#" method="post">
-        <p>Message: </p>
-        <p><input type="text" name="message"/></p>
-        <p><input type="submit" value="SEND"></p>
-    </form>
-</body>
-
-</html>
+{% extends "base.html" %}
+{% block head %}{% endblock %}
+{% block body %}
+<input type="button" onclick="alert('KILL YUORSLEF!!!!11!!')" value="Click Me. Do it.">
+<p><a href="https://www.twitter.com/snehenpashin"target="_blank">
+	<br><br><img src="static/css/assets/thoon.jpg" alt=":33"style="width:300px;height:40px;display:block;margin:auto"></a></p>
+    <br><br><img src="static/css/assets/leafeater.gif"alt=":33"style="width:300px;height:300px;display:block;margin:auto"></a></p>
+{% endblock %}

@@ -2,6 +2,6 @@
 {% block head %}View all users{% endblock %}
 {% block body %}
     {% for item in values %}
-        <p>ID: {{item._id}} Name: {{item.name}}, Email: {{item.email}}/</p>
+        <p>#: {{item._id}} TIME: {{item.log}}, MESSAGE: {{item.message}}/</p>
     {% endfor %}
 {% endblock %}
