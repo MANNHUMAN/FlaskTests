@@ -3,9 +3,8 @@
 {% block body %}
 <p>Put all your friends on blast xdxd</p>
 {% for item in values %}
-    <p>{{item.blasted_user}}: {{item.log}}: "{{item.message}}"</p>
+    <p style="background-color: darkblue;">{{item.blasted_user}}: {{item.log}}: "{{item.message}}"</p>
     <p>Called out by {{item.blasting_user}}</p>
-    <p></p>
+    <p></p><p></p>
 {% endfor %}
 {% endblock %}
-blasted_user, blasting_user, message, log, message_id

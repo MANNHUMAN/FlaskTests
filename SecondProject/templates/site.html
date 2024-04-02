@@ -1,8 +1,18 @@
 {% extends "base.html" %}
-{% block head %}{% endblock %}
+{% block head %}
+<script src="{{url_for('static', filename='swagscripts.js')}}"></script>
+<script src="{{url_for('static', filename='jquery-3.7.1.min.js')}}"></script>
+{% endblock %}
 {% block body %}
-<input type="button" onclick="alert('KILL YUORSLEF!!!!11!!')" value="Click Me. Do it.">
+<input id='confirm' type="button" onclick="alerting()" value="Click Me. Do it.">
 <p><a href="https://www.twitter.com/snehenpashin"target="_blank">
 	<br><br><img src="static/css/assets/thoon.jpg" alt=":33"style="width:300px;height:40px;display:block;margin:auto"></a></p>
-    <br><br><img src="static/css/assets/leafeater.gif"alt=":33"style="width:300px;height:300px;display:block;margin:auto"></a></p>
+    <br><br><img src="static/css/assets/leafeater.gif"alt=":33"style="width:300px;height:300px;display:block;margin:auto"id="pimpin"></a></p>
+<p id = "demo">Now you see me...</p>
+<button type="button" onclick="swaggerFunction('demo')">PRESS THE BUTTON DO IT AHAHAHAHAH</button>
+<p id='yatta' onmouseover="this.innerHTML='Click text below me'" onmouseout="this.innerHTML='hey....'">hey....</p>
+<p id='yatta2' onclick="nincompoop()">text below....</p>
+<p onclick="swagPimping()">click this for test.</p>
+<p onclick="windowTest()">test2</p>
+<p onclick="dynamic('yatta')">dynamic</p>
 {% endblock %}
