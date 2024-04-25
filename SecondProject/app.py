@@ -136,10 +136,14 @@ def message():
 
 '''INITIALIZATION'''
 
+@app.route("/numbers")
+def numbers():
+    return render_template('numbers.html')
+
 if __name__=='__main__':
     with app.app_context():
         def discrun():
-            client.run('')
+            client.run('MTIxMzgxNDQ3ODI3ODQ5MjI0MA.GKSe8U.dc1zTDeOMey0qys5Y5922tWC1ctnK-DAqX_nqA')
         discthread = threading.Thread(target=discrun)
         discthread.start()
         db.create_all()
